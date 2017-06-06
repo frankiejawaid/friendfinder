@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var htmlRoutes = require('./app/routing/html-routes.js');
-var ApiRoutes = require('./app/routing/api-routes.js');
+var ApiRoutes 
 var friends = require('./app/data/friends.js');
 
 //Express app
