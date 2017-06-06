@@ -5,7 +5,9 @@ var htmlRoutes = require('./app/routing/html-routes.js');
 var ApiRoutes = require('./app/routing/api-routes.js');
 var friends = require('./app/data/friends.js');
 
+//Express app
 var app = express();
+var PORT = (process.env.PORT || 3000);
 
 // Sets up the Express app to handle data parsing 
 app.use(bodyParser.json());
@@ -25,4 +27,7 @@ htmlServing.survey(app, path);
 api.getApi(app, friends);''
 api.postAPI(app, friends);
 
-app.listen(process.env.PORT || 3000);
+//Starts the server to listening
+app.listen(PORT, function() {
+    console.log('Listening to PORT ' + PORT);
+})
