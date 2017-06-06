@@ -1,15 +1,8 @@
 {
-  "name": "app",
-  "version": "1.0.0",
-  "description": "finder",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.15.3",
-    "path": "^0.12.7"
-  }
+"name": "FriendFinder Node App",
+"description": "App using express",
+"repository": "",
+"logo": "",
+"keywords": ["node", "express"],
+"image": "heroku/nodejs"
 }
